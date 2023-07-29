@@ -5,7 +5,8 @@ const getData = async () => {
   return todos;
 };
 
-const TodosPage = () => {
+const TodosPage = async () => {
+  const todos = await getData();
   return <div>Dashboard TodosPage </div>;
 };
 
