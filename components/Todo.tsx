@@ -7,7 +7,9 @@ const Todo = ({ todo }) => {
 
   return (
     <div
-      className=""
+      className={`border border-black/20 cursor-pointer ${
+        todo.completed ? "line-through text-gray-900" : ""
+      }`}
       onClick={() => startTransition(() => completeTodo(todo.id))}
     >
       {todo.content}
