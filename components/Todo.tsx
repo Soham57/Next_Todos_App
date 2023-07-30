@@ -1,3 +1,4 @@
+"use client";
 const Todo = ({ todo }) => {
   return <div>{todo.content}</div>;
 };
