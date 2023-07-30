@@ -9,6 +9,7 @@ export const completeTodo = async (id) => {
       completed: true,
     },
   });
+  revalidatePath("/todos");
 };
 
 export const newTodo = async (formData) => {
