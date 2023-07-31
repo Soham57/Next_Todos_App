@@ -28,7 +28,7 @@ export default function RootLayout({
             <ul className="flex items-center">
               {links.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href}>{link.label}</Link>
+                  <Link href={link.href}>{link.label} </Link>
                 </li>
               ))}
             </ul>
